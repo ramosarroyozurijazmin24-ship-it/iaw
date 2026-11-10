@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Evidencias - Aplicaciones Web</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            flex: 1;
+            width: 100%;
+        }
+
+        .modules-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 1.8rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            color: #1e3c72;
+            font-size: 1.4rem;
+            margin-bottom: 1.2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #2a5298;
+        }
+
+        .practice-list {
+            list-style: none;
+        }
+
+        .practice-list li {
+            margin-bottom: 0.8rem;
+        }
+
+        .practice-list a {
+            display: block;
+            padding: 0.75rem 1rem;
+            background-color: #eef2f7;
+            color: #2a5298;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        .practice-list a:hover {
+            background-color: #2a5298;
+            color: white;
+        }
+
+        .empty-state {
+            color: #777;
+            font-style: italic;
+            padding: 1rem;
+            text-align: center;
+            background-color: #fafafa;
+            border: 1px dashed #ccc;
+            border-radius: 6px;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            margin-top: auto;
+        }
+
+        footer p {
+            margin: 0.3rem 0;
+            font-size: 0.95rem;
+        }
+
+        .highlight {
+            color: #4da6ff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Portafolio de Evidencias</h1>
+        <p>Desarrollo e Implementación de Aplicaciones Web</p>
+    </header>
+
+    <main>
+        <div class="modules-container">
+            <!-- Bloque 1: Construye Aplicaciones Web -->
+            <section class="card">
+                <h2>Construye Aplicaciones Web</h2>
+                <ul class="practice-list">
+                    <li><a href="practica1.html" target="_blank">Práctica 1</a></li>
+                    <li><a href="imagen1.html" target="_blank">Imagen 1</a></li>
+                    <li><a href="practica2.html" target="_blank">Práctica 2</a></li>
+                    <li><a href="ejemplo3.html" target="_blank">Ejemplo 3</a></li>
+                </ul>
+            </section>
+
+            <!-- Bloque 2: Implementa Aplicaciones Web -->
+            <section class="card">
+                <h2>Implementa Aplicaciones Web</h2>
+                <!-- Espacio preparado para agregar los futuros enlaces de Implementa -->
+                <div class="empty-state">
+                    Prácticas de implementación próximamente.
+                </div>
+                <!-- 
+                <ul class="practice-list">
+                    <li><a href="practica_imp1.html" target="_blank">Práctica 1 - Implementación</a></li>
+                </ul> 
+                -->
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p><strong>Nombre Completo:</strong> <span class="highlight">[ramos arroyo zuri jazmin]</span></p>
+        <p><strong>Grupo:</strong> <span class="highlight">[5cpm]</span></p>
+    </footer>
+
+</body>
+</html>
